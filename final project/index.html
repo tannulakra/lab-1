@@ -1,0 +1,120 @@
+<!doctype html><!--mentioning the doctype of the file -->
+<html lang="en">
+<!-- adding the meta data to our main project-->
+
+<head><!--head element-->
+  <meta charset="utf-8"><!-- setting the characterset-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Wrist Computer</title> <!--the title of the html is wrist computer -->
+  <!-- setting up the meta data  -->
+  <meta name="description" content="THE SEIKO WATCH 2000">
+  <meta name="robots" content="noindex,nofollow">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- add our custom js file -->
+  <script>
+    $(document).ready(
+      $(function () {
+        $("#header").load("./Header.html");
+        $("#footer").load("./Footer.html");
+
+
+        // user interactions using javascript
+        let x = document.querySelector(".center section div h1");
+        x.addEventListener("mouseenter",()=>{
+          $(x).css("color","white");
+        })
+        
+        x.addEventListener("mouseleave",()=>{
+          $(x).css("color","black");
+        })
+
+
+      })
+
+
+  );
+
+  </script>
+
+  <link rel="stylesheet" href="./css/style.css"> <!-- attaching the css file to the index.html-->
+  <!--adding the font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap"
+    rel="stylesheet">
+</head>
+<!-- making the body a flex container -->
+
+<body class="flex">
+  <!--Adding our header first-->
+  <header id="header">
+
+
+  </header><!--header tags ends -->
+
+
+  <main class="center"><!--defining a class to the main-->
+
+    <section><!--section 1 -->
+      <div>
+        <h1>1984: Seiko UC-2000 wrist computer</h1><!-- this is out h1-->
+      </div>
+    </section>
+    <section><!--section 2 -->
+      <div>
+        <h2>What was so interesting about this?</h2><!--our second heading -->
+        <p>The Seiko UC-2000 wrist computer was the 80's version of the smartwatch.<br><!--break tag -->
+          only capable of storing 2K of data, telling the time and perfroming calculator
+          functions,<br><!--another break tag -->
+          the device was extravagantly priced at $300-about $690 in today's dollars.</p>
+      </div>
+    </section>
+
+    <figure><!-- insering our first picture-->
+      <img src="./img/sample-img2.jpg" alt="image 1" class="center">
+      <figcaption>Seiko wrist computer</figcaption><!-- this is the figure caption-->
+    </figure>
+    <div><!--section 3 -->
+      <p>Today, while watches remain the heart of Seiko's business, its technological expertise in micro-engineering,
+        metallurgy and mechatronics has caused the company to expand into many diverse fields including camera
+        components, other precision instruments, eyeglasses, jewelry, as well as sports and toiletry products.<br> In
+        2001, in order to be better able to offer even more attractive products to consumers around the world, Seiko's
+        watch division became an independent company, SEIKO WATCH CORPORATION.Watches are our business.<br> Through
+        them, we seek to share our pleasure and pride in production, giving you pleasure and pride in possession, and
+        adding a touch of enchantment to every precious moment.</p>
+    </div>
+
+    <section><!--sction 5 -->
+      <div>
+        <h3>The Wrist Computer</h3>
+        <!-- embedding a video in the html-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Wx1ujueXMrA?si=20I0HVBJ2hUo42pn"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p id="RR">Click to know more</p>
+        <button type="button"
+          onclick='document.getElementById("RR").innerHTML = "Watch the complete video to get indepth knowledge about the watch" '>About
+          the Watch</button>
+      </div>
+    </section>
+    <figure><!-- insering another image -->
+      <img src="./img/img2.jpg" alt="image 2" class="ok">
+    </figure>
+
+
+
+
+  </main><!--main tag ends  -->
+
+  <footer id="footer"><!--footer tag -->
+
+
+  </footer><!--footer tag ends  -->
+
+</body>
+
+</html><!-- html ends-->

@@ -1,0 +1,135 @@
+<!doctype html><!--mentioning the doctype of the file -->
+<html lang="en">
+ <!-- adding the meta data to our main project-->
+  <head><!--head element-->
+  <meta charset="utf-8"><!-- setting the characterset-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Wrist Computer</title>  <!--the title of the html is wrist computer -->
+ <!-- setting up the meta data  -->
+  <meta name="description" content="THE SEIKO WATCH 2000">
+  <meta name="robots" content="noindex,nofollow">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- add our custom js file -->
+  <script>
+  $(function(){
+    $("#header").load("Header.html");
+    $("#footer").load("Footer.html");
+  });
+
+  </script>
+  
+
+  <link rel="stylesheet" href="./css/style.css"> <!-- attaching the css file to the index.html-->
+  <!--adding the font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+ </head>
+ <!-- making the body a flex container -->
+  <body class="flex">
+   <!--Adding our header first-->
+    <header id="header">
+
+      </header><!--header tags ends -->
+<main class="center"><!--starting the main tag -->
+
+<div><!-- a div containner-->
+    <h1>OWN ONE NOW!!!</h1><!-- our h1-->
+    <h2>A Smart Device on your Wrist</h2><!-- our h2-->
+
+      <p>This Watch acts as a calculator apart from being just a watch</p>
+      <p>Watch of the Future</p>
+      <p>Several models such as UC-2200,UC-2100 are available to choose from. </p>
+</div>
+      <div><!--another div container -->
+
+   <figure><!--adding our figures -->
+     <img src="./img/img5.jpg" alt="image 1"><!--adding a class to figure 1 -->
+     <figcaption>Seiko wrist computer</figcaption>
+
+   </figure>
+
+     <p>A One Time Investment. This watch has a batterylife of 27hrs
+     <br>Just name any color of your choice and the watch will be created in same color
+
+   </p>
+
+     <figure>
+
+
+     <img src="./img/product3.jpg" alt="image 3"><!--adding a class to figure 2 and 3 -->
+     <figcaption>Wrist Smartcomputer</figcaption>
+
+   </figure>
+
+</div>
+
+     <section><!-- section 1-->
+       <h3>Personal Information</h3><!--heading 3 -->
+       <!-- making a form tag so as to collect information-->
+        <form action="input" method="Post" autocomplete="on" enctype="multipart/form-data"><!-- Using form element to take the input from the user-->
+       <label>Enter Your Details</label><!-- asking the user for the details-->
+       <br>
+       <input type="text" name="First name" placeholder="First Name" required><!-- the first name-->
+       <br>
+       <input type="text" name="Last name" placeholder="Last Name" required><!-- last name-->
+       <br>
+       <input type="email" name="email" placeholder="Your Email" required><!-- email id-->
+       <br>
+       <input type="text" name="Location" placeholder="Your Location for Delivery" required><!-- the location of the user for the delivery-->
+       <br>
+       <input type="number" name="Phone number" placeholder="Your Phone number" required><!-- asking for our phone number-->
+       <br>
+
+       </form>
+       </section>
+
+     <section><!-- section 2-->
+       <h4>Quantity</h4><!-- heading 4-->
+        <form action="input" method="Post" autocomplete="on" enctype="multipart/form-data"><!-- Using form element to take the input from the user-->
+          <label>How many do you want to purchase?</label><!-- asking the user  for the number of watches-->
+          <br>
+          <input type="number" name="Number of Watches" placeholder="Number of Watches" required><!-- the amount -->
+          <br>
+          <input type="text" name="Color of the Watch" placeholder="Color of the Watch" required><!-- the amount -->
+          <br>
+
+        </form>
+
+      </section>
+
+      <div><!--section 3 -->
+
+          <form action="input" method="Post" autocomplete="on" enctype="multipart/form-data">
+        <label>CHOOSE A WRIST SIZE:  </label>
+        <br>
+        <input type="radio" id="36mm" name="size" value="36 mm"><!-- 36mm size-->
+        <label for="36mm">36 mm</label>
+        <input type="radio" id="38mm" name="size" value="38 mm"><!-- 38mm size-->
+        <label for="38mm">38 mm</label>
+        <input type="radio" id="40mm" name="size" value="40 mm"><!-- 40mm lsize-->
+        <label for="40mm">40 mm</label>
+        <input type="radio" id="42mm" name="size" value="42 mm"><!-- 42mm size-->
+        <label for="42mm">42 mm</label>
+
+
+       <br>
+       <input type="submit" value="Order"><!--click on this to order -->
+
+       <a href="http://127.0.0.1:5500/input">
+        <p>Your order is placed.</p>
+       </a>
+       
+        </form>
+
+
+      </div>
+</main><!--main tag ends -->
+
+<footer id="footer"><!--our footer -->
+
+
+
+</footer>
+</body><!-- body tag ends-->
+ </html><!--html ends -->

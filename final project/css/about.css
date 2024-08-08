@@ -1,0 +1,56 @@
+body{
+    margin: 0px;/*margin is 0px */
+   background-color: #808080;/* dark grey color is added */
+  }
+  
+  
+  h1,h2,h3{
+   font-family: 'Montserrat', sans-serif;/*font is montessart and family is sans-serif */
+  
+  }
+  
+  
+  p,a,li,figcaption{/* paragraph, a , li will inherit following properties*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;/*font size is 20px */
+    text-decoration: none;/* no text decoration*/
+  }
+  
+  
+  .flex > header{
+  
+    height:125px;/* height is 125 px*/
+    padding: 10px 20px;/*padding of top and bottom */
+    display: flex;/* displaying flex*/
+    align-items: center;/*items will be aligned center */
+  
+    }
+  
+    .flex > header > div > a > img{
+      width:auto;/* width of the image is auto*/
+      height:100%;/* height is 100%*/
+    }
+  
+    .flex > header > nav > ul {
+     margin: 0px;/* margin is 0px*/
+     list-style: none;/*removing the dots in li */
+     display: flex;/* display flex*/
+    }
+  
+    .flex > header > nav > ul > li{
+      padding: 0px 15px;/* padding */
+    }
+  
+    .center{
+        /* class center will acquire the below stated properties*/
+  
+       height:100%;/* height will be auto adjusted*/
+  
+       display: block;
+       margin-left: auto;/*both the left and right margin is auto */
+       margin-right: auto;
+       width: 100%;/*70% width */
+       text-align:  center;/*itms are centrally aligned */
+  
+  
+     }

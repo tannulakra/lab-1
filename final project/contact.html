@@ -1,0 +1,85 @@
+<!doctype html><!--mentioning the doctype of the file -->
+<html lang="en">
+ <!-- adding the meta data to our main project-->
+  <head><!--head element-->
+  <meta charset="utf-8"><!-- setting the characterset-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Wrist Computer</title>  <!--the title of the html is wrist computer -->
+ <!-- setting up the meta data  -->
+  <meta name="description" content="THE SEIKO WATCH 2000">
+  <meta name="robots" content="noindex,nofollow">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- add our custom js file -->
+  <script>
+  $(function(){
+    $("#header").load("Header.html");
+    $("#footer").load("Footer.html");
+  });
+
+  </script>
+
+  <link rel="stylesheet" href="./css/style.css"><!-- attaching the css file to the index.html-->
+  <!--adding the font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+ </head>
+ <!-- making the body a flex container -->
+  <body class="flex">
+   <!--Adding our header first-->
+    <header id="header">
+
+      </header><!--header tags ends -->
+
+   <main class="center"><!--main tag starts and a class ok is defined -->
+
+     <h1>Contact US</h1><!--our first heading -->
+
+     <a href="https://www.seikowatches.com/ca-en">Our Official Website</a><!--link of the official website of seiko -->
+     <p>We can be contacted directly through our official website. We handle all types of queries online which includes shipment, offers, returns or other possible inquiry.</p>
+
+     <a href="Customer-Service1:647-288-2222">(647) 288-2222</a><!--official number of customer care of seiko -->
+    <p>Contact us by dialling the customer service number provided</p>
+
+
+    <p>Excellent customer services are provided to all our customers</p>
+   </main>
+
+   <section><!--making a contact form -->
+     <h2>Contact form</h2><!-- second heading-->
+      <form action="input" method="Post" autocomplete="on" enctype="multipart/form-data"><!-- Using form element to take the input from the user-->
+     <label>Enter Your Details</label><!-- asking the user for the details-->
+     <br>
+     <input type="text" name="First name" placeholder="First Name" required><!-- the first name-->
+     <br>
+     <input type="text" name="Last name" placeholder="Last Name" required><!-- last name-->
+     <br>
+     <input type="email" name="email" placeholder="Your Email" required><!-- email id-->
+     <br>
+     <input type="text" name="Location" placeholder="Your Location for Delivery" required><!-- the location of the user for the delivery-->
+     <br>
+     <input type="number" name="Phone number" placeholder="Your Phone number" required><!-- phone number-->
+     <br>
+
+
+     </form>
+     </section>
+   <div><!--second section -->
+       <form>
+            <input type="submit" value="Submit"><!--submit button -->
+       </form>
+     </div>
+
+
+
+   <footer id="footer"><!-- our footer-->
+
+
+
+   </footer>
+
+ </body><!-- body ends-->
+
+
+
+ </html><!--html ends -->
